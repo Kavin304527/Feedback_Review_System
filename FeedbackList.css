@@ -1,0 +1,106 @@
+.feedback-list {
+  background: rgb(122, 204, 141);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(61, 59, 59, 0.2);
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.feedback-list h2 {
+  color: #060606;
+  margin-bottom: 25px;
+}
+
+.feedbacks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback-item {
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #0c36ee;
+  background: #f8f9ff;
+}
+
+.feedback-item.status-reviewed {
+  border-left-color: #38e060;
+  background: #d7e1d7;
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.feedback-header h3 {
+  color: #1c1b1b;
+  flex: 1;
+}
+
+.rating {
+  color: #f3b601;
+  font-size: 1.1rem;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.new {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.reviewed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.feedback-message {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.feedback-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback-actions button {
+  padding: 8px 16px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.feedback-actions button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.feedback-actions small {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
